@@ -1,0 +1,129 @@
+
+/* Print view */
+@media print {
+	body  {
+		width: 97%;
+		padding: 0;
+		margin-top: 1.5em;
+		margin-right: 1%;
+		margin-left: 2%;
+		margin-bottom: 1.5em;
+		background: #fff; 
+		color: #000;
+		font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		font-size:12pt;
+		line-height:1.4375;
+		font-weight:300;
+	}
+	main{
+		left: 0%;
+		margin-top: 5%;
+	}
+/*	header {
+		background: #fff;
+		color: #000;
+	}*/
+	header #wb-bc{
+		display: none !important; 
+	}
+	h1,h2,h3{ 
+		font-weight:bold;
+		background: none;
+		color: #000;		
+	}
+	h1 { 
+		border-bottom:1px solid #ccc; 
+		padding:0 0 10px 0; 
+		margin:0 0 5px 0;
+	}
+	a { 
+		text-decoration:underline; 
+	}
+	form, textarea, table{ 
+		page-break-inside: avoid;  
+	}
+	/*article {
+		page-break-before: always;
+	}*/
+	ul, img {
+		page-break-inside: avoid;
+	}
+	footer{
+		display: none !important; 
+	}
+	#wb-cont p { 
+		font-size:14px; 
+		font-family: "times new roman", serif; 
+		margin:0 0 18px 0; 
+	}
+	.container{
+		padding: 0;
+		margin: 0;
+	}
+	.row{
+		padding: 0;
+		margin: 0;
+	}
+	.print-no-break{ 
+		page-break-inside: avoid;  
+	}
+	.print-100{
+		width: 100% !important; 
+	}
+	.visible-print  { 
+		display: inherit !important; 
+		padding: 10px 0 ;
+	}
+	.hidden-print { 
+		display: none !important; 
+	}
+
+	#wb-bnr #wb-bar .toronto-logo-header{
+		display: none !important; 
+	}
+	#wb-bnr #wb-bar img{
+		padding-bottom: 35px;; 
+	}
+	#wb-bnr #wb-bar #wb-srch, #wb-bnr #wb-bar #wb-lng,#wb-bnr #wb-sttl, 
+	#wb-bnr #wb-sm, #wb-bnr #wb-glb-mn, #wb-sec, #wb-info{
+		display: none !important; 
+	}
+	/* Change padding from screen to print media */
+	.padding-10, .padding-20, .NT-padding-20{
+		padding: 5pt;
+	}
+	.padding-30{
+		padding: 15pt 0;
+	}
+	.panel-info {
+    	border-color: #fff !important;
+	}
+	.panel-info>.panel-heading {
+		border-color: #fff !important;
+	}
+	a.btn{
+		font-weight:bold;
+		padding: 0;
+		border: none;
+		background: none;
+	}
+	.hght-inhrt {
+		min-height: 0px !important;
+	}
+	#slider{
+	   /* display: none !important; */
+		padding: 0;
+		margin: 0;
+	}
+	#JS-date{
+	font-size: 10pt;
+	padding-left:5pt;
+	text-align: left;
+	}
+}	  
+/*.visible-print-block         Hidden        Visible (as block)
+.visible-print-inline        Hidden        Visible (as inline)
+.visible-print-inline-block  Hidden        Visible (as inline-block)
+.hidden-print                Visible       Hidden
+*/
+
