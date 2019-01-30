@@ -27,20 +27,21 @@
 			</a>
 		</nav>
 		
-		<!-- <video id="myVideo" controls> -->
+		<!-- Video Play -->
  		<video id="myVideo" autoplay muted loop>
 			<source src="asset/video/SaliTyping.mp4" type="video/mp4">
 			<source src="asset/video/SaliTyping.webm" type="video/ogg">
 		</video> 
 			
-		<!-- <audio autoplay loop controls volume="0.1"> -->
-		<audio autoplay loop volume="0.1" id="audio" allow="autoplay">
-		    <source src="asset/audio/piano.mp3" type="audio/mpeg">
-		    Your browser does not support the audio element.
+		<!-- Audio Play -->
+		<audio autoplay id="audio" loop>
+		    <source src="asset/audio/piano.mp3" type="audio/mp3">
 		</audio>
+		<!--  Google Chrome Audio Player Hack -->
+		<iframe src="asset/audio/piano.mp3" style="display:none" id="iframeAudio"></iframe> 
 
-		<div id="content" class=" " id="top">
-			<h1>Salimeh Safi</h1>
+		<div id="content">
+			<h1  id="top">Salimeh Safi</h1>
 			<section class="contact-info">
 				<div class="float-left">
 					<h2 class="sr-only">Contact-information</h2>
@@ -118,7 +119,8 @@
 			<div class="content-wrap">
 				<h2>Professional Experiences</h2>
 				<section class="city2018">
-					<h3>City of Toronto<span class="date">April1, 2017 - August 31, 2018</span></h3>
+					<!-- <h3><a href="https://www.toronto.ca/" class="external" target="_blank"><img src="asset/img/CityOfToronto-Logo-small.jpeg">City of Toronto</a><span class="date">April1, 2017 - August 31, 2018</span></h3> -->
+					<h3><a href="https://www.toronto.ca/" target="_blank">City of Toronto</a><span class="date">April1, 2017 - August 31, 2018</span></h3>
 					<h4>Full-Stack Web Developer</h4>
 					<ul>
 						<li>Developed and enhanced the front and back-end components and functionalities for internal and external websites and web applications.</li>
@@ -128,7 +130,7 @@
 						<li>Used Adobe Test & Target as the analytics and marketing cloud tools to optimize web pages SEO to deliver personalized, relevant contents to the organization&#39;s clients rather than
 						one-size-fits-all communications to convert visitors into loyal customers utilizing jQuery, AngularJS, CSS3, HTML5, XML, JavaScript technologies.</li>
 						<li>Cross-browser testing to provide consistent behavior and experience across all browsers, devices, and platforms.</li>
-						<li>Responsible for front end GUI development and implementation</li>
+						<li>Responsible for front end GUI development and implementation of <a href="https://www.toronto.ca/community-people/housing-shelter/homeless-help/#shelters" title="City of Toronto Shelters Aapplication" class="external" target="_blank">Shelters app</a>, <a href="https://www.toronto.ca/services-payments/recycling-organics-garbage/towaste-app/" title="City of Toronto Garbage Collector Aapplication" class="external" target="_blank">Garbage Collector app</a></li>
 						<li>Worked with other team members to cooperatively design, develop and deploy quality solutions in order to satisfy project objectives and client requirements.</li>
 						<li>Developing responsive web designs, Advertising/Marketing E-mails.</li>
 						<li>Worked in the Agile team environment to have the most flexible and productive environment for sharing fresh ideas and creativities</li>
@@ -139,10 +141,12 @@
 				<hr />
 
 				<section class="2016-2017">
-					<h3>BMO Bank of Montreal<span class="date">Sept 2016 - March 31, 2017</span></h3>
-					<h4>Front-end UI/UX Agile Web Developer - Digital Marketing Channels</h4>
+					<!-- <h3><a href="https://www.bmo.com/main/personal" class="external" target="_blank"><img src="asset/img/BMO-Logo-small.jpg">BMO Bank of Montreal</a><span class="date">Sept 2016 - March 31, 2017</span></h3> -->
+					<h3><a href="https://www.bmo.com/main/personal" target="_blank">BMO Bank of Montreal</a><span class="date">Sept 2016 - March 31, 2017</span></h3>
+					<h4>Front-end UI/UX Agile Web Developer</h4>
+					<h5>Digital Marketing Channels</h5>
 					<ul>
-						<li>Refactoring and enhancing existing web pages for Wealth, Insurance and Investments Line of Businesses to improve SEO, AODA, and UX at BMO using jQuery, JavaScript, Angular JS, Jira,
+						<li>Refactoring and enhancing existing web pages for <a href="https://www.bmo.com/insurance/advisor/products/" title="BMO Insurance" class="external" target="_blank">Insurance</a>, <a href="https://www.bmo.com/gam/ca" title="BMO Global Asset Management" class="external" target="_blank">Global Asset Management</a> and <a href="https://www.bmoinvestorline.com/ILClientWeb/login/DisplayLogin.jsp?refresh=true&lang=E" title="BMO Global Asset Management" class="external" target="_blank">Wealth Management</a> line of Businesses to improve SEO, AODA, and UX at BMO using jQuery, JavaScript, Angular JS, Jira,
 						Git/GitHub/Grunt, Node Package Management, Bower, Jira.</li>
 						<li>Use JavaScript, HTML and CSS coding to modern W3C Web Standard for web-based applications.</li>
 						<li>Creating landing pages, campaign pages with different functionalities and components.</li>
@@ -159,7 +163,8 @@
 				<hr />
 
 				<section class="2015-2016">
-					<h3>City of Toronto<span class="date">Sept 2015 - Sept. 2016</span></h3>
+					<!-- <h3><h3><a href="https://www.toronto.ca/" class="external" target="_blank"><img src="asset/img/CityOfToronto-Logo-small.jpeg">City of Toronto</a><span class="date">Sept 2015 - Sept 2016</span></h3> -->
+					<h3><a href="https://www.toronto.ca/" target="_blank">City of Toronto</a><span class="date">Sept 2015 - Sept 2016</span></h3>
 					<h4>Web Developer</h4>
 					<ul>
 						<li>Developing responsive web pages that comply with GUI front end development and implementation on AODA, and WCAG 2.0 Level AA to refresh City of Toronto's Intranet site, using CSS/CSS3,
@@ -184,8 +189,8 @@
 				<hr />
 
 				<section class="2014-2015">
-					<h3>Web Biz Discovery<span class="date">May 2014 - July 2015</span></h3>
-					<h4>Web Developer - Flyermailer.com</h4>
+					<h3><a href="http://flyermailer.com/" target="_blank">Web Biz Discovery</a><span class="date">May 2014 - July 2015</span></h3>
+					<h4>Web Developer</h4>
 					<ul>
 						<li>Developing and implementing new web pages on GUI development and implementation.</li>
 						<li>Databases administrating.</li>
@@ -216,12 +221,12 @@
 				<h2>Education/Training</h2>
 				<h3>Computer Programming and Analysis – Advanced Diploma<span class="date">2013 - 2018</span></h3>
 				<p>Seneca College, School of Information and Communications Technology, Toronto, Canada</p>
-				<span class="gpa">GPA 3.8</span>
+				<p id="gpa">GPA 3.8</p>
 
 				<h3>Applied Surveying Engineering - Bachelor<span class="date">2003 - 2007</span></h3>
 				<p>Shahid Rajee Teacher Training University, Tehran, Iran</p>
 
-				<h3>Civil Photogrammetry and remote Sensing - Advanced Diploma<span class="date">2003 - 2005</span></h3>
+				<h3>Civil Photogrammetry and Remote Sensing - Advanced Diploma<span class="date">2003 - 2005</span></h3>
 				<p>Geomatics College of the National Cartographic Center, Tehran, Iran</p>
 			</div><!-- end of content-wrap -->
 		</section><!-- end of education -->
@@ -236,25 +241,25 @@
 		<section id="socialMedia" class="socialMedia">
 			<h2>Let's Keep in Touch!!!</h2>
 			<a href="https://www.linkedin.com/in/salimeh-safi-265b4b54/?originalSubdomain=ca" target="_blank">
-			<i class="fab fa-linkedin fa-2x" aria-hidden: "true"></i>
+			<i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">LinkedIn</span>
 			</a>
 			<a href="https://github.com/salisafi" target="_blank">
-			<i class="fab fa-github-square fa-2x" aria-hidden: "true"></i>
+			<i class="fab fa-github-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">GetHub</span>
 			</a>
 			<a href="https://plus.google.com/u/0/" target="_blank">
-			<i class="fab fa-google-plus-square fa-2x" aria-hidden: "true"></i>
+			<i class="fab fa-google-plus-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">GooglePlus</span>
 			</a>
 			<a href="https://www.facebook.com/profile.php?id=100004270096650" target="_blank">
-			<i class="fab fa-facebook-square fa-2x" aria-hidden: "true"></i>
+			<i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
 			<span class="sr-only">FaceBook</span>
 			</a>
  
 			<p class="copyRight"><small>&copy; 2014 - 2019 - Salimeh Safi</small></p>
 		</section><!-- end of resume -->
 	</footer><!-- end of contact -->
+	<script src="asset/js/script.js"></script>
 </body>
-<script src="asset/js/script.js"></script>
 </html>
