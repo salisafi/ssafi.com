@@ -72,9 +72,9 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		html{
 			box-sizing: border-box;
 		}
-		*, *:before, *:after{
+/* 		*, *:before, *:after{
 			box-sizing: inherit;
-		}
+		} */
 		body{
 			background: #EBEFC3;
 			font-family: 'Aleo', serif;
@@ -169,6 +169,11 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		}
 		/* Header 
 		------------------------  */
+		header{
+			/* background: #2B2D42; */
+			color: #EDF2F4;
+			position: relative;
+		}
 		nav{
 			width: 100%;
 			background: #EBEFC3;
@@ -189,20 +194,20 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			border-radius: 15px;
 			text-align: center;
 		}
+		/* Audio 
+		------------------------  */
+		.audio{
+			display: none;
+		}
+		
 		/* Video 
 		------------------------  */
 		#myVideo {
 			position: absolute;
 			min-width: 100%; 
+			z-index: 0;
+		}
 
- 
-			z-index: 1;
-		}
-		header{
-			background: #2B2D42;
-			color: #EDF2F4;
-			position: relative;
-		}
 
 		
 		/* Profile
@@ -331,37 +336,27 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			body{
 				line-height: 2em;
 			}
-			h1{
-				margin-top: 50px;
-			}
 			.content-wrap {
 				padding: 5px;
 			}
 			nav{
 				max-width: 60%;
-				margin-top: 10px;
-				margin-bottom: -10px;
+				margin-top: 10px;  
+				margin-bottom: 10px;
 				margin-left: 20%; 
-				text-align: center;
-				/* border-bottom-right-radius: 10px;
-				border-bottom-left-radius: 10px; */
 			}
 			nav a:not(:last-child){
 				display: none;
 				background: #c60f24;
-				padding: 10px;
-			}
-			.fa, .fas {
-				font-weight: 900;
-				font-size: 1.3em;
+				padding: 5px;
 			}
 			nav a.icon {
 				float: right;
 				background: #2B2D42;
-				margin-top: 30px;
 				margin-right: 5%;
 				display: block;
 				padding: 10px;
+				margin-bottom: 20px;
 			}
 			.topnav.responsive {position: relative;}
 			.topnav.responsive .icon {
@@ -385,11 +380,15 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 				text-align: center;
 			}
 			#content{
-				top: 110%;
+				position: relative;
+				top: 0%;
 				width: 60%;
+				margin: 55px 20%;
+				padding-top: 5px;
 				color: #000;
 				background: #EBEFC3;
 				text-align: center;
+				z-index: 1000 !important;
 			}
 			.downloadLink{
 				margin: 20px auto; 
