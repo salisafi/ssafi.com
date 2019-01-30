@@ -123,7 +123,7 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			outline: 3px solid blue;
 		}
 		.content-wrap{
-			max-width: 90%;
+			max-width: 80%;
 			margin: 0 auto;
 			padding: 25px;
 			overflow: auto;
@@ -329,8 +329,9 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 				padding: 5px;
 			}
 			nav{
-				max-width: 50%;
+				max-width: 60%;
 				margin-top: 10px;
+				margin-bottom: -10px;
 				margin-left: 20%; 
 				/* border-bottom-right-radius: 10px;
 				border-bottom-left-radius: 10px; */
@@ -347,14 +348,19 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			}
 			#content{
 				top: 110%;
+				width: 60%;
+				color: #000;
+				background: #EBEFC3;
+				text-align: center;
 			}
 			.downloadLink{
 				margin: 20px auto; 
+				width: 90%;
 			}
 			.profilePhoto {
 				width: 95%;
 				margin-top: 0px;
-			    margin-bottom: -20px;
+			    margin-bottom: 20px;
 			}
 			ul li{
 				margin:0 0 30px 0;   
