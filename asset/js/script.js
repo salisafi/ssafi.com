@@ -10,6 +10,11 @@ function myFunction() {
   }
 }
 
+
+
+/* document.getElementById("audio").play(); */
+ 
+
 // document.getElementById("experiences").innerHTML = "Hello JavaScript!";
 
 window.onscroll = function() {scrollFunction()};

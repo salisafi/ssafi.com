@@ -71,11 +71,14 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		------------------------  */
 		html{
 			box-sizing: border-box;
+			overflow-x: hidden;
+			position: relative;
 		}
-/* 		*, *:before, *:after{
+    	*, *:before, *:after{
 			box-sizing: inherit;
-		} */
+		} 
 		body{
+			position: relative;
 			background: #EBEFC3;
 			font-family: 'Aleo', serif;
 			font-size: 1.2em;
@@ -140,6 +143,16 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		 ul{
 			list-style: none;
 		}
+		#content{
+			position: absolute;
+			width: 60%;
+			top: 20%;
+			margin: -45px 20%;
+			padding: 35px;
+			color: #fff;
+			background: rgba(43, 45, 66, 0.6);
+			border-radius: 20px;
+		}
 		.experiences ul li{
 		}
 		ul li:before {    
@@ -171,6 +184,7 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		------------------------  */
 		header{
 			/* background: #2B2D42; */
+
 			color: #EDF2F4;
 			position: relative;
 		}
@@ -197,18 +211,17 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 		/* Audio 
 		------------------------  */
 		.audio{
-			display: none;
+			/* display: none; */
 		}
 		
 		/* Video 
 		------------------------  */
 		#myVideo {
-			position: absolute;
+			position: relative;
 			min-width: 100%; 
+			max-width: 100%; 
 			z-index: 0;
 		}
-
-
 		
 		/* Profile
 		------------------------  */
@@ -219,7 +232,6 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			border-radius: 75px;
 			border: 5px solid black;
 			margin-top: -100px;
-			margin-bottom: -20px;
 		}
 		.downloadLink{
 			display: inline-block;
@@ -328,13 +340,50 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
         font-size: 14px;
 	    border-radius: 12px;
 		border: 3px solid white;
+		z-index: 1000000;
     }
 
 	/* Media Queries
 		------------------------  */ 				
+
+		/*  Tablet Screen Sizes */
+		@media (min-width: 769px) and (max-width: 1200px){
+			body{
+				text-align: center;
+			}
+			#content{
+				padding: 10px;
+			}
+			.downloadLink{
+				margin-top: 5px;
+			}
+			.float-left,
+			.float-right{
+				float: none;
+			}
+			.profilePhoto{
+				margin-top: 0px;
+				width: 50%;
+				margin-bottom: 2%;
+			}
+			main {
+				display: block;
+				position: relative;
+				margin-top: 30%;
+			}
+		}
+		
+		/*  Between Tablet Screen Sizes and cell phone*/
+		@media (min-width: 1000px) and (max-width: 1200px){
+		}
+		
+		/*  Cell phone Screen Sizes */
 		@media (max-width: 768px){
 			body{
 				line-height: 2em;
+			}
+			.profile h2{
+				margin-top: 50px;
 			}
 			.content-wrap {
 				padding: 5px;
@@ -369,33 +418,24 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 				width: 90%;
 				display: block;
 			}
-/* 			nav a{
-				display: block;
-				width: 90%;
-				min-width: 30%;
-				margin-bottom: 10px;
-			    padding: 10px;
-			} */
 			h1, h2, h3, h4, p{
 				text-align: center;
 			}
 			#content{
 				position: relative;
-				top: 0%;
 				width: 60%;
-				margin: 55px 20%;
+				margin: -45px 20%;
 				padding-top: 5px;
 				color: #000;
-				background: #EBEFC3;
 				text-align: center;
-				z-index: 1000 !important;
+				border-radius: 20px;
 			}
 			.downloadLink{
 				margin: 20px auto; 
 				width: 90%;
 			}
 			.profilePhoto {
-				width: 95%;
+				width: 85%;
 				margin-top: 0px;
 			    margin-bottom: 20px;
 			}
@@ -422,5 +462,3 @@ https://coolors.co/edd382-fc9e4f-f2f3d9-ce6c47-f4442e
 			}
 		}
 		
-		@media (max-width: 1024px){
-		}
