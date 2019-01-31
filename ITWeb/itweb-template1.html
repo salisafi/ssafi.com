@@ -1,0 +1,579 @@
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
+
+<!-- /////////////////////////   Head   //////////////////////// -->
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="WT.sp" content="ITWEB">
+
+<!-- These Meta Tags Must be Provided - Required* -->
+<meta name="description" content="">
+<meta name="Owner" content="">
+<meta name="division" content="">
+<meta name="lastRevised" content="">
+<meta name="expiryDate" content="">
+<meta name="keywords" content="">
+
+<!-- Must get Updated - Required* -->
+<title>ITWeb - Template</title>
+
+<!-- ///////////////////////////////////  DO NOT ALTER THE FOLLOWING BLOCK OF CODE   ////////////////////////////////// -->
+
+<!-- CSS and JS links -->
+<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--[if gte IE 9 | !IE ]><!-->
+<link rel="stylesheet" href="assets/css/wet-boew.min.css">
+<link rel="stylesheet" href="assets/css/theme.css" media="screen">
+<!--<![endif]-->
+
+<link rel="stylesheet" href="assets/css/print.css" type="text/css" media="print">
+
+<noscript>
+<link rel="stylesheet" href="assets/css/noscript.min.css">
+</noscript>
+</head>
+<style>
+.btn-centre { 
+	text-align: center !important;
+}
+.btn-info {
+	text-decoration: none !important;
+}
+.btn-danger.active, .btn-danger.focus, .btn-danger:active, .btn-danger:focus, .btn-danger:hover, .open>.btn-danger.dropdown-toggle {
+	color: #fff;
+	background-color: #942826;
+	border-color: #3b100f
+}
+.btn-warning.active, .btn-warning.focus, .btn-warning:active, .btn-warning:focus, .btn-warning:hover, .open>.btn-warning.dropdown-toggle {
+	color: #000;
+	background-color: #c2aa0a;
+	border-color: #574c05
+}
+.btn .fa {
+	margin-top: 4px;
+}
+.align-change .btn {
+	text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+.align-change .btn {
+	text-align: center !important;
+}
+}
+
+@media screen and (min-width: 1200px) {
+.align-change .btn {
+	text-align: left !important;
+}
+}
+</style>
+</head>
+<!-- /////////////////////////   Body - Header - Do Not Edit   //////////////////////// -->
+<body vocab="http://schema.org/" typeof="WebPage">
+<!-- SKIP LINKS - keyboard focus  -->
+<ul id="wb-tphp">
+     <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+     <li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to site information</a></li>
+</ul>
+<!--  ///////   VISIBLE ELEMENTS   /////// -->
+<header role="banner">
+     <div id="wb-bnr">
+          <section id="wb-bar"><!-- Effects all City of Toronto logo, InsideTO links and Search box -->
+               <div class="container">
+                    <div class="row"> 
+                         <!-- City of Toronto Branding - WHITE SECTION -->
+                         <section class="toronto-logo-header col-xs-2"> 
+							<a href="http://www.toronto.ca" title="Toronto.ca"></a> 
+						 </section>
+                         <!-- PRINT VISIBLE - City of Toronto header --> 
+                         <img src="../assets/images/toronto-itWeb-logo.jpg" alt="toronto-itweb logo for print" class="visible-print"> 
+                         <!-- InsideTO Links -->
+                         <section id="wb-lng" class="col-xs-5 visible-md visible-lg">
+                              <h2>InsideTO Links</h2>
+                              <ul class="text-right insideto-links">
+                                   <li><a href="">Inside Toronto</a></li>
+                                   <li><a href="">Contact Us</a></li>
+                                   <li><a href="">Staff Directory</a></li>
+                              </ul>
+                         </section>
+                         <!--  Search Box -->
+                         <section id="wb-srch" role="search" class="col-xs-5 visible-md visible-lg">
+                              <h2>Search</h2>
+                              <form  method="get" action="" name="form1" class="form-inline" onsubmit="dcsMultiTrack('WT.dl','26','WT.ti','','WT.search-term',document.getElementById('sb-srch-q').value);">
+                                   <div class="input-group">
+                                        <div class="input-group-btn search-panel selectCustom">
+                                             <select class="form-control" name="site" aria-label="Search within">
+                                                  <option selected="" value="ITWeb">ITWeb</option>
+                                                  <option value="InsideTO-All">InsideTO</option>
+                                             </select>
+                                        </div>
+                                        <input name="sort" value="date:D:L:d1" type="hidden">
+                                        <input name="output" value="xml_no_dtd" type="hidden">
+                                        <input name="ie" value="UTF-8" type="hidden">
+                                        <input name="oe" value="UTF-8" type="hidden">
+                                        <input name="client" value="itweb" type="hidden">
+                                        <input name="proxystylesheet" value="itweb3" type="hidden">
+                                        <label for="wb-srch-q">Search website</label>
+                                        <input id="wb-srch-q" required class="form-control" name="q" type="search" value="" size="27" maxlength="150">
+                                        <span class="input-group-btn">
+                                        <button type="submit" id="wb-srch-sub" class="btn btn-default searchsubmit"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <span class="sr-only">Submit search</span></button>
+                                        </span> 
+									</div>
+                              </form>
+                         </section>
+                    </div>
+               </div>
+          </section>
+          <!-- end of white header --> 
+          <!--  ///////   ITWeb Branding  - BLUE SECTION /////// -->
+		<div class="container">
+			<div class="row">
+				<div id="wb-sttl" class="itWeb-header col-xs-1"> 
+					<a href="" title="Information &amp; Technology"></a> 
+				</div>
+				<!-- ITWeb Navigation -->	
+				<nav aria-label="Main Navigation" role="navigation" id="wb-sm" data-ajax-fetch="assets/ajax/sitemenu-en.html"  data-trgt="mb-pnl" class="wb-menu visible-md visible-lg" typeof="SiteNavigationElement">
+					<h2>Site menu</h2>
+					<div class="col-xs-11">
+						<ul class="list-inline menu float-right">
+							<li><a href="">Support</a></li>
+							<li><a href="">Training</a></li>
+							<li><a href="">Policy</a></li>
+							<li><a href="">Purchasing</a></li>
+							<li><a href="">About I&T</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+          <!--  ///////   Responsive Navigation /////// -->
+          <div class="visible-sm visible-xs responsive-menu">
+               <div class="container visible-sm visible-xs">
+                    <div class="row">
+                         <section class="wb-mb-links col-xs-12 visible-sm visible-xs" id="wb-glb-mn">
+                              <h2>Search and menus</h2>
+                              <ul class="pnl-btn list-inline text-right">
+                                   <li><a href="#mb-pnl" title="Search and menus" aria-controls="mb-pnl" class="overlay-lnk btn btn-sm btn-default" role="button"> <span class="glyphicon glyphicon-th-list"> <span class="wb-inv">Search and menus</span></span></a></li>
+                              </ul>
+                              <div id="mb-pnl"></div>
+                         </section>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <!-- /////////////////////////   Breadcrumb   //////////////////////// -->
+     <nav aria-label="Breadcrumb" id="wb-bc" property="breadcrumb" class="visible-md visible-lg">
+          <h2>Breadcrumb</h2>
+          <div class="container">
+               <div class="row">
+                    <ol class="breadcrumb">
+                         <li><a href="">InsideTO</a></li>
+                         <li class="active"><a href="">ITWeb</a></li>
+                         <li class="active">Grid Template</li>
+                    </ol>
+               </div>
+          </div>
+     </nav>
+</header>
+<!-- /////////////////////////   Content Body   //////////////////////// -->
+<main role="main" property="mainContentOfPage">
+     <div class="container">
+          <section class="row">
+               <div class="col-sm-2 visible-md visible-lg "> <span class="fa-stack fa-5x"> <span class="fa fa-circle fa-stack-2x"></span> <span class="fa fa-th fa-stack-1x fa-inverse"></span> </span> </div>
+               <div class="col-sm-10">
+                    <h1 id="wb-cont" property="name">Template 1</h1>
+                    <p>Marfa swag shoreditch asymmetrical, health goth pabst forage literally DIY. Brunch craft beer pour-over street art, pabst sriracha food truck fanny pack crucifix fixie godard tote bag shabby chic. Meditation dreamcatcher normcore, roof party kinfolk crucifix single-origin coffee bushwick mixtape irony yr microdosing. Scenester pickled cray ethical lo-fi pug kinfolk mustache, seitan plaid +1 listicle slow-carb health goth irony. Heirloom artisan flannel, gluten-free XOXO cold-pressed pug sriracha helvetica farm-to-table squid man bun slow-carb direct trade street art. Sustainable banh mi etsy mixtape, leggings street art +1 messenger bag. Mumblecore swag vice, shabby chic retro humblebrag listicle lumbersexual waistcoat quinoa leggings irony pug thundercats.</p>
+               </div>
+          </section>
+     </div>
+     <!-- /////////////////////////   Grid Example 1   //////////////////////// -->
+     <section class="gray-background">
+		 <div class="container">
+               <h2 class="page-header">Grid with Large Buttons</h2>
+               <div class="row wb-eqht">
+                    <div class="col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt">Test Default Size</a> </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt btn-lg">Test Default Large</a> </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt btn-sm">Test Default Small</a> </div>
+                    <div class="col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt btn-xs">Test Default Extra Small</a> </div>
+               </div>
+               <div class="row wb-eqht"> 
+                    
+                    <!-- Buttons with Colour -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt">Default</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-info btn-block hght-inhrt">Information</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-primary btn-block hght-inhrt">Primary</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-success btn-block hght-inhrt">Success</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-warning btn-block hght-inhrt">Warning</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-danger btn-block hght-inhrt">Danger</a></div>
+               </div>
+               <div class="row wb-eqht"> 
+                    <!-- Buttons with Icons Left -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-default btn-block hght-inhrt btn-lg"><span class="fa fa-th"></span> Default</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-info btn-block hght-inhrt"><span class="fa fa-info-circle fa-lg"></span> Information</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-primary btn-block hght-inhrt"><span class="fa fa-circle fa-lg"></span> Primary</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-success btn-block hght-inhrt"><span class="fa fa-check-circle fa-lg"></span> Success</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-warning btn-block hght-inhrt"><span class="fa fa-exclamation-triangle fa-lg"></span> Warning</a></div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 align-change margin-bottom-10"> <a href="#" class="btn btn-danger btn-block hght-inhrt"><span class="fa fa-exclamation-circle fa-lg"></span> Danger</a></div>
+               </div>
+               <div class="row wb-eqht"> 
+                    <!-- Buttons with Centred -->
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>
+                         Default</a> </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-info btn-block hght-inhrt"><span class="fa fa-info-circle fa-2x"></span><br>
+                         Information</a> </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-primary btn-block hght-inhrt"><span class="fa fa-circle fa-2x"></span><br>
+                         Primary</a> </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-success btn-block hght-inhrt"><span class="fa fa-check-circle fa-2x"></span><br>
+                         Success</a> </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-warning btn-block hght-inhrt"><span class="fa fa-exclamation-triangle fa-2x"></span><br>
+                         Warning</a> </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-danger btn-block hght-inhrt"><span class="fa fa-exclamation-circle fa-2x"></span><br>
+                         Danger</a> </div>
+               </div>
+          </div>
+          
+     </section>
+     <!-- /////////////////////////   Grid Example 2   //////////////////////// -->
+     <section>
+          <div class="container">
+               <h2 class="page-header">Panel Grid With in a Column</h2>
+               <div class="row">
+                    <div class="col-sm-4">
+                         <div class="panel panel-default">
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-8">
+                         <div class="row wb-eqht">
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <p>Panel content</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <p>Panel content</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <p>Panel content</p>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <p>Panel content</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <!-- /////////////////////////   Grid Example 3   //////////////////////// -->
+     <section class="gray-background">
+        <div class="container">
+               <h2 class="page-header">Panel Grid</h2>
+               <div class="row wb-eqht">
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Panel content</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-4">
+                         <div class="panel panel-default hght-inhrt">
+                              <header class="panel-heading">
+                                   <h3 class="panel-title">Panel title</h3>
+                              </header>
+                              <div class="panel-body">
+                                   <p>Yr trust fund put a bird on it, </p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div> 
+     </section>
+     <!-- /////////////////////////   Grid Example 4   //////////////////////// -->
+     <section>
+          <div class="container">
+               <h2 class="page-header">Buttons Within Panels</h2>
+               <div class="row">
+                    <div class="col-sm-4">
+                         <div class="panel panel-default">
+                              <div class="panel-body">
+                                   <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt">Default</a></div>
+                                   <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt">Test Default Size</a></div>
+                                   <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt btn-sm">Test Default Small</a></div>
+                                   <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt btn-xs">Test Default Extra Small</a> </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-sm-8">
+                         <div class="row wb-eqht">
+                              <div class="col-sm-12">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <div class="row wb-eqht"> 
+                                                  <!-- Buttons with Centred -->
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>
+                                                       Default</a> </div>
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-info btn-block hght-inhrt"><span class="fa fa-info-circle fa-2x"></span><br>
+                                                       Information</a> </div>
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-primary btn-block hght-inhrt"><span class="fa fa-circle fa-2x"></span><br>
+                                                       Primary</a> </div>
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-success btn-block hght-inhrt"><span class="fa fa-check-circle fa-2x"></span><br>
+                                                       Success</a> </div>
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-warning btn-block hght-inhrt"><span class="fa fa-exclamation-triangle fa-2x"></span><br>
+                                                       Warning</a> </div>
+                                                  <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 margin-bottom-10"> <a href="#" class="btn btn-centre btn-danger btn-block hght-inhrt"><span class="fa fa-exclamation-circle fa-2x"></span><br>
+                                                       Danger</a> </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <div class="row wb-eqht"> 
+                                                  <!-- Buttons with Centred -->
+                                                  <div class="col-md-6 col-sm-12 col-xs-6 margin-bottom-10"> 
+													<a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>Button</a> 
+												   </div>
+												  <div class="col-md-6 col-sm-12 col-xs-6 margin-bottom-10"> 
+													<a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>Button</a> 
+												   </div>
+                                                  <div class="col-md-6 col-sm-12 col-xs-6 margin-bottom-10"> 
+													<a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>Button</a> 
+												   </div>
+                                                  <div class="col-md-6 col-sm-12 col-xs-6 margin-bottom-10"> 
+												  <a href="#" class="btn btn-centre btn-default btn-block hght-inhrt"><span class="fa fa-th fa-2x"></span><br>Button</a> 
+												   </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="col-sm-6">
+                                   <div class="panel panel-default hght-inhrt">
+                                        <header class="panel-heading">
+                                             <h3 class="panel-title">Panel title</h3>
+                                        </header>
+                                        <div class="panel-body">
+                                             <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt"><span class="fa fa-th"></span> Default</a></div>
+                                             <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt"><span class="fa fa-th"></span> Test Default Size</a></div>
+                                             <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt btn-sm"><span class="fa fa-th"></span> Test Default Small</a></div>
+                                             <div class="margin-bottom-10"><a href="#" class="btn btn-default btn-block hght-inhrt btn-xs"><span class="fa fa-th"></span> Test Default Extra Small</a> </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+</main>
+
+<!-- ///////////////////////////////////  DO NOT ALTER THE FOLLOWING CODE   ////////////////////////////////// --> 
+<!-- Last Modified Date and Time -->
+<div class="container">
+     <section id="JS-date" property="date-modified">
+          <h2 class="sr-only">Last Modified Date</h2>
+          <script>document.write("Last updated : " + document.lastModified);</script> 
+     </section>
+</div>
+
+<!-- /////////////////////////   Footer   //////////////////////// -->
+<footer role="contentinfo">
+      <nav id="wb-info" role="navigation" data-ajax-replace="assets/ajax/footer-copyright.html">
+          <h2>Site information</h2>
+          <div class="visible-md visible-lg wb-navcurr hidden-print">
+               <div class="container">
+                    <div class="row">
+                         <section class="col-sm-3">
+                              <h3>Internet</h3>
+                              <ul class="list-unstyled">
+                                   <li><a href="http://www.toronto.ca" target="_blank">toronto.ca</a></li>
+                                   <li><a href="http://ontario.ca" target="_blank">ontario.ca</a></li>
+                                   <li><a href="http://forecast.io/#/f/43.6515,-79.3833" target="_blank">Toronto Weather</a></li>
+                                   <li><a href="http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=83f6e69ae554e410VgnVCM10000071d60f89RCRD&camera=true" target="_blank">Traffic cameras </a></li>
+                                   <li><a href="http://www.ttc.ca" target="_blank">TTC</a></li>
+                                   <li><a href="http://www.gotransit.com/timetables/en/schedules/full_schedules.aspx" target="_blank">GO schedules </a></li>
+                              </ul>
+                         </section>
+                         <section class="col-sm-3">
+                              <h3>Careers</h3>
+                              <ul class="list-unstyled">
+                                   <li><a href="" target="_blank">Job opportunities</a></li>
+                                   <li><a href="">HRWeb</a></li>
+                                   <li><a href="">Payroll/ benefits </a></li>
+                                   <li><a href="" target="_blank">Employee Self Serve</a></li>
+                                   <li><a href="">Training</a></li>
+                                   <li><a href="" target="_blank">TPS By-law</a></li>
+                              </ul>
+                         </section>
+                         <section class="col-sm-3">
+                              <h3>Stay Connected</h3>
+                              <ul class="list-unstyled">
+                                   <li><a href="" target="_blank">Newsroom</a></li>
+                                   <li><a href="" target="_blank">E-updates</a></li>
+                                   <li><a href="" target="_blank">Social Media</a></li>
+                                   <li><a href="" target="_blank">Accessibility</a></li>
+                                   <li><a href="" target="_blank">Privacy</a></li>
+                                   <li><a href="" target="_blank">Open Data</a></li>
+                                   <li><a href="" target="_blank">Webbook</a></li>
+                              </ul>
+                         </section>
+                         <section class="col-sm-3">
+                              <h3>City Council</h3>
+                              <ul class="list-unstyled">
+                                   <li><a href="" target="_blank">Mayor's Office</a></li>
+                                   <li><a href="" target="_blank">City Councillors and Wards</a></li>
+                                   <li><a href="" target="_blank">Meetings</a></li>
+                                   <li><a href="" target="_blank">Agencies and Corporations</a></li>
+                                   <li><a href="" target="_blank">Accountability Officers</a></li>
+                                   <li><a href="" target="_blank">Council Highlights</a></li>
+                              </ul>
+                         </section>
+                    </div>
+               </div>
+          </div>
+     </nav>
+     </nav>
+     <!-- /////////////////////////   Copyright Links  //////////////////////// -->
+     <div id="meta" class="hidden-print">
+          <div class="container">
+               <div class="row">
+                    <h2 class="sr-only">Copyright Links</h2>
+                    <div class="col-sm-9">
+                         <ul>
+                              <li><a href="http://www.toronto.ca/311/"><img src="../assets/images/311.png" alt="311"></a></li>
+                              <li aria-hidden="true">|</li>
+                              <li><a href="http://www.toronto.ca">Toronto.ca</a></li>
+                              <li aria-hidden="true">|</li>
+                              <li><a href="http://insideto.toronto.ca">InsideTO</a></li>
+                              <li aria-hidden="true">|</li>
+                              <li><a href="/get_connected/privacy_statement.htm">Privacy Statement</a></li>
+                         </ul>
+                    </div>
+                    <!-- /////////////////////////   Copyright   //////////////////////// -->
+                    <div class="col-sm-3">
+                         <p><a href="http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=d57ab9bd23805410VgnVCM10000071d60f89RCRD">&copy; <span property="copyrightHolder">City Toronto</span> <span property="copyrightYear">1998 - 
+                              <script>document.write(new Date().getFullYear());</script> 
+                              </span> </a></p>
+                    </div>
+               </div>
+          </div>
+     </div>
+</footer>
+<!-- //////  JS  links //////// --> 
+
+<!--[if gte IE 9 | !IE ]><!--> 
+<script src="../assets/js/jquery-2.1.4.min.js"></script> 
+<script src="../assets/js/wet-boew.min.js"></script> 
+<!--<![endif]--> 
+
+<!--[if lt IE 9]>
+	<script src="../assets/js/ie8-wet-boew2.min.js"></script>
+<![endif]--> 
+
+<script src="../assets/js/webtrends.js"></script>
+</body>
+</html>
